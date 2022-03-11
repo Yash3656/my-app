@@ -10,5 +10,10 @@ export class NewLoginComponent implements OnInit {
   constructor() { }
   ngOnInit(): void {
   }
-
+  loadd() {
+    alert("Username:-- " + ((<HTMLInputElement>
+      document.getElementById("user")).value) +
+      "\n" +"Password:-- " + ((<HTMLInputElement>document.
+        getElementById("pass")).value));
+  }
 }
