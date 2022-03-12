@@ -10,6 +10,8 @@ import { DirectiveExercise1Component } from './directive-exercise1/directive-exe
 import { DirectiveExercise2Component } from './directive-exercise2/directive-exercise2.component';
 import { Exercise1Directive } from './exercise1.directive';
 import { Exercise2Directive } from './exercise2.directive';
+import { PipeTestComponent } from './pipe-test/pipe-test.component';
+import { SqrtPipe } from "./app.sqrt";
 
 @NgModule({
   declarations: [
@@ -21,7 +23,9 @@ import { Exercise2Directive } from './exercise2.directive';
     DirectiveExercise1Component,
     DirectiveExercise2Component,
     Exercise1Directive,
-    Exercise2Directive
+    Exercise2Directive,
+    PipeTestComponent,
+    SqrtPipe
   ],
   imports: [
     BrowserModule
