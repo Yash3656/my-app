@@ -12,7 +12,8 @@ import { Exercise1Directive } from './exercise1.directive';
 import { Exercise2Directive } from './exercise2.directive';
 import { PipeTestComponent } from './pipe-test/pipe-test.component';
 import { SqrtPipe } from "./app.sqrt";
-
+import { NewCompServiceComponent } from './new-comp-service/new-comp-service.component';
+import { PracticeServiceService } from "./practice-service.service";
 @NgModule({
   declarations: [
     AppComponent,
@@ -25,12 +26,13 @@ import { SqrtPipe } from "./app.sqrt";
     Exercise1Directive,
     Exercise2Directive,
     PipeTestComponent,
-    SqrtPipe
+    SqrtPipe,
+    NewCompServiceComponent
   ],
   imports: [
     BrowserModule
   ],
-  providers: [],
+  providers: [PracticeServiceService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
